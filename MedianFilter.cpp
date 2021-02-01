@@ -54,6 +54,8 @@ int main()
             dst.at<uchar>(y, x) = window[4];
         }
     }
+    cv::imwrite("output.png",dst);
+
     namedWindow("Final");
     imshow("Final", dst);
     namedWindow("Initial");
