@@ -10,7 +10,7 @@ using namespace cv;
 void insertionSort(int window[])
 {
     int temp, i, j;
-    for (i = 0; i < 20; i++) {
+    for (i = 0; i < 9; i++) {
         temp = window[i];
         for (j = i - 1; j >= 0 && temp < window[j]; j--) {
             window[j + 1] = window[j];
@@ -30,7 +30,7 @@ int main()
         return -1;
     }
     //create a sliding window of size 9
-    int window[20];
+    int window[9];
     dst = src.clone();
     for (int y = 0; y < src.rows; y++)
         for (int x = 0; x < src.cols; x++)
